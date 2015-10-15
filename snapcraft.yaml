@@ -1,0 +1,14 @@
+name: helloc
+version: 1.0
+vendor: Chris J Arges <chris.j.arges@canonical.com>
+binaries:
+  helloc:
+    exec: ./bin/hello
+summary: Hello C Example
+description: Use Make to build a simple Hello World Example
+icon: icon.png
+
+parts:
+    helloc:
+        plugin: make
+        source: git://github.com/arges/helloc
